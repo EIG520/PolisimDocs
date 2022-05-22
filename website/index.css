@@ -1,0 +1,99 @@
+*{
+margin: 0;
+padding: 0;
+
+--brand-hue: 350;
+--brand-saturation: 44%;
+--brand-lightness: 48%;
+
+--brand-light: hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
+--text1-light: hsl(var(--brand-hue) var(--brand-saturation) 10%);
+--text2-light: hsl(var(--brand-hue) 30% 30%);
+--surface1-light: hsl(var(--brand-hue) 25% 90%);
+--surface2-light: hsl(var(--brand-hue) 20% 99%);
+--surface3-light: hsl(var(--brand-hue) 20% 92%);
+--surface4-light: hsl(var(--brand-hue) 20% 85%);
+--surface-shadow-light: var(--brand-hue) 10% calc(var(--brand-lightness) / 5);
+--shadow-strength-light: .02;
+
+--brand-dark: hsl(var(--brand-hue) calc(var(--brand-saturation) / 2) calc(var(--brand-lightness) / 1.5));
+--text1-dark: hsl(var(--brand-hue) 15% 85%);
+--text2-dark: hsl(var(--brand-hue) 5% 65%);
+--surface1-dark: hsl(var(--brand-hue) 10% 10%);
+--surface2-dark: hsl(var(--brand-hue) 10% 15%);
+--surface3-dark: hsl(var(--brand-hue) 5%  20%);
+--surface4-dark: hsl(var(--brand-hue) 5% 25%);
+--surface-shadow-dark: var(--brand-hue) 50% 3%;
+--shadow-strength-dark: .8;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: var(--surface1-dark);
+color: var(--text1-dark);
+line-height: 1.6;
+height: 100vh;
+}
+
+.login-container {
+width: 50%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+}
+
+.login-input[type="submit"] {
+width: 100%;
+max-width: calc(600px + 10px);
+height: 30px;
+background-color: var(--surface2-dark);
+color: var(--text-dark);
+font-weight: bold;
+border: none;
+margin: 0.1rem 0;
+}
+
+.login-input[type="submit"]:hover {
+background-color: var(--surface3-dark);
+color: var(--text-dark);
+}
+
+.login-input[type="email"] {
+width: 100%;
+max-width: 600px;
+height: 30px;
+background-color: var(--surface2-dark);
+color: var(--text-dark);
+font-weight: bold;
+border: none;
+margin: 0.1rem 0;
+padding: 0 5px;
+}
+
+.login-input[type="password"] {
+width: 100%;
+max-width: 600px;
+height: 30px;
+background-color: var(--surface2-dark);
+color: var(--text-dark);
+font-weight: bold;
+border: none;
+margin: 0.1rem 0;
+padding: 0 5px;
+}
+
+form {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+}
+
+small {
+color: crimson;
+}
