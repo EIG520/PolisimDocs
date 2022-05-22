@@ -11,6 +11,8 @@ const app = express();
 
 var users:Array<User> = [];
 
+users.push(new User(0,"sussy@sus.com","sus","",false));
+
 var pages:Array<Page> = [];
 
 app.get("/",(req,res)=>{
